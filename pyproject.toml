@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leadgeneration"
+version = "0.1.0"
+description = "Lead generation toolkit for scraping and scoring local prospects"
+authors = [{name = "Lead Generation Toolkit"}]
+requires-python = ">=3.10"
+keywords = ["lead generation", "scraping", "philadelphia"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "requests>=2.32.0",
+    "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+leadgen = "leadgen.cli:main"
