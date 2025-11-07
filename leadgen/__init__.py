@@ -1,0 +1,4 @@
+"""Lead generation toolkit for scraping and scoring local prospects."""
+
+__all__ = ["__version__"]
+__version__ = "0.1.0"
